@@ -35,3 +35,7 @@ class Student(models.Model):
         verbose_name = 'Student'
         verbose_name_plural = 'Studenslar'
         ordering = ['created_at']
+
+
+class Teacher(models.Model):
+    pass
