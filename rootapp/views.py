@@ -6,7 +6,8 @@ from .models import *
 
 def kurs(request):
     kurs = Kurs.objects.all()
-    print(kurs)
+
+    
     context = {'kurs': kurs}
 
     return render(request, 'kurs.html',context=context)

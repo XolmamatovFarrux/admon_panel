@@ -5,18 +5,15 @@
     <title></title>
 </head>
 <body>
-<p>
-    salom
-</p>
-{{ kurs }}
-{% for item in kurs %}
+<h1>Kurs malumotlari </h1>
+{% for curs in kurs %}
     <div>
-    <p>item.title</p>
-    <p>item.start_time</p>
-    <p>item.end_time</p>
-    <p>item.description</p>
-    <p>item.created_at</p>
-    <p>item.updated_at</p>
+        <p>{{ curs.title }}</p>
+        <p>{{ curs.start_time }}</p>
+        <p>{{ curs.end_time }}</p>
+        <p>{{ curs.description }}</p>
+        <p>{{ curs.created_at }}</p>
+        <p>{{ curs.updated_at }}</p>
     </div>
 
 {% endfor %}
